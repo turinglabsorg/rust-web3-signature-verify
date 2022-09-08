@@ -1,13 +1,4 @@
-use serde::Serialize;
-use web3::types::{H160, U256};
 use web3::signing::{keccak256, recover};
-
-// Defining structs
-#[derive(Serialize)]
-struct Balance {
-    balance: U256,
-    address: H160,
-}
 
 #[tokio::main]
 pub async fn main() -> web3::Result<()> {
