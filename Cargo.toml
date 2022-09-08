@@ -1,0 +1,16 @@
+[package]
+name = "rust-web3-signature-verify"
+version = "0.1.0"
+edition = "2021"
+author = "turinglabsorg"
+
+[dependencies]
+axum = "0.4.8"
+hex = "0.4"
+web3 = "0.18.0"
+tokio = { version= "1", features = ["full"] }
+dotenv = "0.15.0"
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0.68"
+tracing = "0.1"
+tracing-subscriber = { version = "0.3", features = ["env-filter"] }
